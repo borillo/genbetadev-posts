@@ -1,0 +1,3 @@
+@media (min-width: 200px) {
+  h1, a, body : { color : #ff0000; }
+}
