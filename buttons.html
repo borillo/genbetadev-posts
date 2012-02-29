@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Nuevo proyecto con Bootstrap 2.0</title>
+    <meta name="description" content="Artículo en GenbetaDev sobre Bootstrap 2.0">
+    <meta name="author" content="Ricardo Borillo">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      h2 { border-bottom: 1px dashed black; padding-top: 1em; }
+      h3 { padding-top: 0.5em; }
+    </style>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container" style="margin-top:30px;">
+      <div class="hero-unit">
+        <h1>Ejemplos Genbeta Dev</h1>
+      </div>
+
+      <h2>Buttons</h2>
+
+      <h3>Button type</h3>
+
+      <a class="btn btn-primary" href="">Primary</a>
+      <button class="btn btn-info" type="submit">Info</button>
+      <input class="btn btn-success" type="button" value="Success" style="margin-top:8px;" />
+
+      <h3>Button size</h3>
+
+      <a class="btn btn-large btn-primary" href="">Primary action</a>
+      <button class="btn btn-small btn-primary" type="submit">Primary action</button>
+      <input class="btn btn-mini btn-primary" type="button" value="Primary action" style="margin-top:8px;" />
+
+      <h3>Button with icon</h3>
+
+      <a class="btn btn-success" href="#">
+        <i class="icon-shopping-cart icon-white"></i>Checkout
+      </a>
+
+      <h3>Dropdown button</h3>
+
+      <div class="btn-group">
+        <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#">
+          Danger 
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div>        
+
+      <h2>Forms</h2>
+
+      <form class="form-horizontal">
+        <fieldset>
+          <legend>Formulario de alta</legend>
+          <div class="control-group">
+            <label class="control-label" for="focusedInput">Nombre de usuario</label>
+            <div class="controls">
+              <input class="input-xlarge focused" id="focusedInput" type="text" value="Campo resaltado cuando recibe el foco">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="disabledInput">Contraseña</label>
+            <div class="controls">
+              <input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="Texto desactivado" disabled>
+            </div>
+          </div>
+          <div class="control-group error">
+            <label class="control-label" for="inputError">Pregunta de seguridad</label>
+            <div class="controls">
+              <input type="text" id="inputError">
+              <span class="help-inline">Este campo es obligatorio</span>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button class="btn">Cancelar</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <h2>Plugins</h2>
+
+      <h3>Ventana modal</h3>
+
+      <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Mostrar la ventana modal</a>
+      <div id="myModal" class="modal hide fade">
+        <div class="modal-header">
+          <a class="close" data-dismiss="modal">×</a>
+          <h3>Aviso</h3>
+        </div>
+        <div class="modal-body">
+          <strong>Texto principal</strong>
+          <p>Decripción de la notificación</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn" data-dismiss="modal">Cerrar</a>
+          <a href="#" class="btn btn-primary">Guardar</a>
+        </div>
+      </div>
+
+      <h3>Popover</h3>
+
+      <a href="#" class="btn btn-danger" rel="popover" title="A Title" data-content="Texto del popover que se muestra cuando pasamos por encima del botón" style="margin-bottom:10em;">Mostrar popover</a>
+    </div> <!-- /container -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
+    <script>$("a[rel=popover]").popover().click(function(e) {
+                e.preventDefault()
+            });</script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
