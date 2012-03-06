@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <body>
+    <table>
+      <tr th:each="prod : ${productos}">
+        <td th:text="${prod.id}">Código del producto</td>
+        <td th:text="${prod.nombre}">Nombre del producto</td>
+      </tr>
+    </table>  
+  </body>
+</html>
